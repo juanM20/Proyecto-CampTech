@@ -1,0 +1,27 @@
+
+nav {
+    font-size: 18px;
+}
+
+.Home {
+    background: rgba(88,158,219,1);
+    color: white;
+}
+
+.Home p, .Home form {
+    font-size: 16px;
+}
+
+
+.About {
+
+    background: rgba(88,158,219,1);
+    color: white;
+}
+
+.About .Team {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}

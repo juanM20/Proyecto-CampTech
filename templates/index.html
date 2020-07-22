@@ -8,33 +8,108 @@
 {% block body %}
     <div class="main">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
+      
             <div class="collapse navbar-collapse" id="navbarColor02">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#">Características</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#">Nosotros</a>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-              </form>
             </div>
-          </nav>
+        </nav>
 
+        <div class="Home jumbotron">
 
+            <h1>COVID Centinela</h1>
+            <p>Verifica si la noticia es verdadera</p>
+
+            <form action="/" method="POST">
+
+                <div class="form-group">
+                    <label for="exampleTextarea">Ingresa el texto de la noticia</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3" style="margin-top: 0px; margin-bottom: 0px; height: 106px;"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputFile">Ingresa el audio</label>
+                    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Aceptar</button>
+            </form>
+        </div>   
+        
+        <div class="Features jumbotron">
+
+            <h1>Características</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex non sit nobis, necessitatibus quas rem hic dolorem! Quod dolorem veniam facere dicta harum praesentium, 
+                cupiditate rem neque, atque distinctio architecto?
+            </p>
+
+        </div>
+
+        <div class="About jumbotron">
+
+            <h1> Nosotros </h1>
+
+            <div class="Team container">
+
+                <div class="Card">
+                    <div class="Image">
+                        <img src="/static/images/Juan.jpg" alt="Imagen de perfil">
+                    </div>
+                    <div class="Details">
+                        <p>Tellez Perez Juan Manuel</p>
+                        <p>Escuela Superior de Computo</p>
+                        <p>Front End</p>
+                    </div>
+                </div>
+
+                <div class="Card">
+                    <div class="Image">
+                        <img src="/static/images/charly.jpg" alt="Imagen de perfil">
+                    </div>
+                    <div class="Details">
+                        <p>Ochoa Ginera Carlos Armando</p>
+                        <p>Escuela Superior de Computo</p>
+                        <p>Machine Learning</p>
+                    </div>
+                </div>
+
+                <div class="Card">
+                    <div class="Image">
+                        <img src="" alt="Imagen de perfil">
+                    </div>
+                    <div class="Details">
+                        <p>Domínguez Moran Joaquín</p>
+                        <p>Escuela Superior de Computo</p>
+                        <p>Machine Learning</p>
+                    </div>
+                </div>
+
+                <div class="Card">
+                    <div class="Image">
+                        <img src="/static/images/pedro.jpg" alt="Imagen de perfil">
+                    </div>
+                    <div class="Details">
+                        <p>Morelos Ordóñez Pedro Luis</p>
+                        <p>Escuela Superior de Computo</p>
+                        <p>Front End</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        
     </div>
 {% endblock %}
