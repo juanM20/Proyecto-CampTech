@@ -6,29 +6,31 @@
 
 
 {% block body %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="#Home">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#Features">Características</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#About">Nosotros</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+
     <div class="main">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      
-            <div class="collapse navbar-collapse" id="navbarColor02">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Características</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nosotros</a>
-                </li>
-              </ul>
+
+        <div class="Home jumbotron" id="Home">
+
+            <div class="Title-home">
+                <h1>COVID Centinela</h1>
+                <p>Verifica si la noticia es verdadera</p>
             </div>
-        </nav>
-
-        <div class="Home jumbotron">
-
-            <h1>COVID Centinela</h1>
-            <p>Verifica si la noticia es verdadera</p>
-
+        
             <form action="/" method="POST">
 
                 <div class="form-group">
@@ -45,18 +47,17 @@
             </form>
         </div>   
         
-        <div class="Features jumbotron">
+        <div class="Features jumbotron" id="Features">
 
             <h1>Características</h1>
 
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex non sit nobis, necessitatibus quas rem hic dolorem! Quod dolorem veniam facere dicta harum praesentium, 
-                cupiditate rem neque, atque distinctio architecto?
+                México sufre dos epidemias paralelas, el Covid-19 y la desinformación. Somos el segundo país con la mayor cantidad de noticias falsas según el estudio Radiografía sobre la difusión de fake news en México. Mediante los servicios de IBM se desarrollará una plataforma para identificar noticias falsas en redes sociales y mensajes de texto de los usuarios.
             </p>
 
         </div>
 
-        <div class="About jumbotron">
+        <div class="About jumbotron" id="About">
 
             <h1> Nosotros </h1>
 
@@ -67,7 +68,7 @@
                         <img src="/static/images/Juan.jpg" alt="Imagen de perfil">
                     </div>
                     <div class="Details">
-                        <p>Tellez Perez Juan Manuel</p>
+                        <h3><b>Tellez Perez Juan Manuel</b></h3>
                         <p>Escuela Superior de Computo</p>
                         <p>Front End</p>
                     </div>
@@ -78,7 +79,7 @@
                         <img src="/static/images/charly.jpg" alt="Imagen de perfil">
                     </div>
                     <div class="Details">
-                        <p>Ochoa Ginera Carlos Armando</p>
+                        <h3><b>Ochoa Ginera Carlos Armando</b></h3>
                         <p>Escuela Superior de Computo</p>
                         <p>Machine Learning</p>
                     </div>
@@ -86,10 +87,10 @@
 
                 <div class="Card">
                     <div class="Image">
-                        <img src="" alt="Imagen de perfil">
+                        <img src="/static/images/joaquin.png" alt="Imagen de perfil">
                     </div>
                     <div class="Details">
-                        <p>Domínguez Moran Joaquín</p>
+                        <h3><b>Domínguez Moran Joaquín</b></h3>
                         <p>Escuela Superior de Computo</p>
                         <p>Machine Learning</p>
                     </div>
@@ -100,7 +101,7 @@
                         <img src="/static/images/pedro.jpg" alt="Imagen de perfil">
                     </div>
                     <div class="Details">
-                        <p>Morelos Ordóñez Pedro Luis</p>
+                        <h3><b>Morelos Ordóñez Pedro Luis</b></h3>
                         <p>Escuela Superior de Computo</p>
                         <p>Front End</p>
                     </div>
