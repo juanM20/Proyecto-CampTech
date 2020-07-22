@@ -49,10 +49,36 @@
     color: #ffffff;
 }
 
+.Features .content-features {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.Features .content-features p {
+    
+    font-size: 18px;
+    justify-self: center;
+}
+
+.Features .content-features img {
+
+    max-width: 300px;
+    max-height: 300px;
+    justify-self: center;
+}
+
 .About {
 
     background: rgba(88,158,219,1);
     color: white;
+}
+
+.About h1 {
+
+    font-size: 40px;
+    margin-bottom: 40px;
 }
 
 .About .Team {
