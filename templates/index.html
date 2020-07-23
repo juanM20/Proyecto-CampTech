@@ -34,23 +34,26 @@
                 <h1>COVID Centinela</h1>
                 <p>Verifica si la noticia es verdadera</p>
             </div>
-        
-            <form action="/" method="POST">
+            
+            <form action="/form" method="POST">
 
                 <div class="form-group group1">
                     <img src="/static/images/news.jpg" alt="News">
                     <label for="exampleTextarea">Ingresa el texto de la noticia</label>
-                    <textarea class="form-control" id="exampleTextarea" rows="3" style="margin-top: 0px; margin-bottom: 0px; height: 106px;"></textarea>
+                    <textarea class="form-control" name="text" id="exampleTextarea" rows="3" style="margin-top: 0px; margin-bottom: 0px; height: 106px;"></textarea>
                 </div>
 
                 <div class="form-group group2">
                     <img src="/static/images/audio.jpg" alt="Audio">
                     <label for="exampleInputFile">Ingresa el audio</label>
-                    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                    <input type="file" class="form-control-file" name="audio" id="exampleInputFile" aria-describedby="fileHelp">
                 </div>
 
                 <button type="submit" class="btn btn-success">Aceptar</button>
+                
             </form>
+
+            
         </div>   
         
         <div class="Features jumbotron" id="Features">
