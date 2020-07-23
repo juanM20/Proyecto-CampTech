@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+    <div class="jumbotron">
+
+        <h1 class="display-3">Resultado</h1>
+        <p class="lead">La noticia es {{ respuesta[0] }} con probabilidad de un {{ respuesta[1] }}% </p>
+        <hr class="my-4">
+
+        <button type="button" class="btn btn-primary"><a href="index.html" style="text-decoration: none; color: aliceblue;">Regresar</a></button>
+    </div>
+{% endblock %}
