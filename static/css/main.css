@@ -8,6 +8,10 @@
     z-index: 10;
 }
 
+.navbar i {
+    display: none;
+}
+
 .main {
     margin-top: 80px;
 }
@@ -112,11 +116,12 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .About .Team .Card {
 
-    max-width: 230px;
+    max-width: 280px;
     max-height: auto;
     background-color: aliceblue;
     color: #000000;
@@ -183,4 +188,101 @@ footer .Copy-right {
     color: #c2c1c1;
     font-size: 16px;
     justify-self: center;
+}
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+
+    .main {
+        width: 100%;
+    }
+   
+    .navbar i {
+       
+    display: block;
+       font-size: 48px;
+       cursor: pointer;
+   }
+
+   .navbar i:hover {
+
+        color: #ffffff;
+   }
+
+
+   .navbar .collapse {
+
+        display: none;
+        flex-direction: row;
+   }
+
+   .Home {
+
+        display: grid;
+        grid-template-rows: 200px 1fr;
+        grid-template-columns: auto;
+   }
+
+
+   .Home form {
+       
+        display: grid;
+        grid-template-rows: 1fr 1fr 100px;
+        grid-template-columns: auto;
+        grid-row: 2 / 3;
+   }
+
+   .Home form .group1 {
+
+        grid-row: 1 / 2;
+   }
+
+   .Home form .group2 {
+
+        grid-row: 2 / 3;
+   }
+ 
+   .Home form .btn {
+       
+        grid-row: 3 / 4;
+        align-self: start;
+   }
+
+
+   .Home .Title-home {
+
+        grid-row: 1 / 2;
+   }
+
+
+   .Features .content-features {
+
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+   }
+
+   .Features .content-features p {
+
+        grid-row: 1 / 2;
+   }
+
+   .Features .content-features img {
+
+        grid-row: 2 / 3;
+   }
+
+
+   .About .Team {
+
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+   }
+
+
 }

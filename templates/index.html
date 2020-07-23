@@ -7,21 +7,22 @@
 
 {% block body %}
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-            <a class="nav-link" href="#Home">Inicio <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#Features">Características</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#About">Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Contact">Contactanos</a>
+        <i class="fa fa-navicon" id="toggle-ico"></i>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="#Home">Inicio <span class="sr-only">(current)</span></a>
                 </li>
-        </ul>
+                <li class="nav-item">
+                <a class="nav-link" href="#Features">Características</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#About">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact">Contactanos</a>
+                    </li>
+            </ul>
         </div>
     </nav>
 
@@ -36,13 +37,13 @@
         
             <form action="/" method="POST">
 
-                <div class="form-group">
+                <div class="form-group group1">
                     <img src="/static/images/news.jpg" alt="News">
                     <label for="exampleTextarea">Ingresa el texto de la noticia</label>
                     <textarea class="form-control" id="exampleTextarea" rows="3" style="margin-top: 0px; margin-bottom: 0px; height: 106px;"></textarea>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group group2">
                     <img src="/static/images/audio.jpg" alt="Audio">
                     <label for="exampleInputFile">Ingresa el audio</label>
                     <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
@@ -129,4 +130,26 @@
             <p> Copyright COVID-Centinela ® 2020</p>
         </div>
     </footer>
+
+
+    <script>
+
+        var MainNav = document.getElementById('navbar');
+        var toggle_btn = document.getElementById('toggle-ico');
+        var i = 0;
+
+        toggle_btn.addEventListener('click', () =>  {
+
+            if (i == 0) {
+                MainNav.style.display = 'flex';
+                i = 1;
+            }     
+            else {
+                MainNav.style.display = 'none';
+                i = 0;
+            }
+        });
+
+    </script>
+
 {% endblock %}
